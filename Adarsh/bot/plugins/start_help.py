@@ -76,7 +76,7 @@ async def start(b, m):
             return'''
     await b.send_message(
         chat_id=m.chat.id,
-        text =f'Hi {m.from_user.mention(style="md")}!,\nI am Telegram File to Link Generator Bot.\nSend me any file and get a direct download link and streamable link.!',
+        text =f'Hᴇʏ 👋 {m.from_user.mention(style="md")} 😍\n\nI am Telegram File to Link Generator Bot.\nSend me any file and get a direct download link and streamable link.!',
         reply_markup=InlineKeyboardMarkup(
                     [
                         [
