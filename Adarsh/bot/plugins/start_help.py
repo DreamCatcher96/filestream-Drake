@@ -80,7 +80,7 @@ async def start(b, m):
         reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Updates Channel Link", url="http://t.me/autoacceptor/85")
+                            InlineKeyboardButton("🦋 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🦋", url="https://t.me/+-ktYuYV7BOViNGZk")
                         ]
                     ]
                 ),)
@@ -132,8 +132,8 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("💁‍♂️ DEV", url="https://t.me/aioadmins")],
-                [InlineKeyboardButton("💥 Source Code", url="https://t.me/AutoAcceptor")]
+                [InlineKeyboardButton("💁‍♂️ DEV", url="https://t.me/Fsadmin1Bot")],
+                [InlineKeyboardButton("💥 Source Code", url="https://t.me/+-ktYuYV7BOViNGZk")]
             ]
         )
     )
