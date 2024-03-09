@@ -9,20 +9,20 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = 28344
-    API_HASH = "29549480357269a6f3fff771"
-    BOT_TOKEN = "57332:AAEq6PscLH1sSknrD1y_uiIyo"
+    API_ID = 4554049
+    API_HASH = "dd603b7872e96dbb18e97c3fb88a2c2d"
+    BOT_TOKEN = "5097487403:AAEJ1HCQjpS5SONX5f7JTUNVMai5nFA_Uog"
     name = str(getenv('name', 'filetobot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = 2000
-    BIN_CHANNEL = -100149562
+    BIN_CHANNEL = -1001979947536
     PORT = int(getenv('PORT', 8080))
     BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
-    OWNER_ID = 885488992 
+    OWNER_ID = 6366452257
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = None
-    OWNER_USERNAME = "Drake_Ry"
+    OWNER_USERNAME = "WhitE_DeviL099"
     if 'DYNO' in environ:
         ON_HEROKU = True
         APP_NAME = str(getenv('APP_NAME'))
@@ -35,6 +35,6 @@ class Var(object):
         URL = "https://{}/".format(FQDN)
     else:
         URL = "http://{}/".format(FQDN)
-    DATABASE_URL = "mongodb+srv://fl8:f8bot@cluster0.voq.mongodb.net/?retryWrites=true&w=majority"
+    DATABASE_URL = "mongodb+srv://filetolink0bot:filetolink0bot@cluster0.vnohdxn.mongodb.net/?retryWrites=true&w=majority"
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', None))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-10013779")).split())) 
