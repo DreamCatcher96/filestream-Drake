@@ -23,7 +23,7 @@ async def sts(c: Client, m: Message):
         await m.reply_text(text=f"Total Users in DB: {total_users}", quote=True)
         
         
-@StreamBot.on_message(filters.command("broadcast") & filters.private  & filters.user(list(Var.OWNER_ID)))
+@StreamBot.on_message(filters.command("broadcast") & filters.private  & filters.user(Var.OWNER_ID))
 async def broadcast_(c, m):
     user_id=m.from_user.id
     out = await m.reply_text(
