@@ -67,11 +67,11 @@ def limiter1(rate_limit_seconds: float) -> Callable:
 async def start(b, m):
     await b.send_message(
         chat_id=m.chat.id,
-        text =f'Hi {m.from_user.mention(style="md")}!,\nI am Telegram File to Link Generator Bot.\nSend me any file and get a direct download link and streamable link.!',
+        text =f'<b>Hᴇʏ 👋 {m.from_user.mention(style="md")} 😍\n\n𝐈 𝐦 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐢𝐥𝐞 𝐭𝐨 𝐃𝐢𝐫𝐞𝐜𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐋𝐢𝐧𝐤 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐨𝐫 𝐁𝐨𝐭 😜\n\n𝐒𝐞𝐧𝐝 𝐌𝐞 𝐀𝐧𝐲 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐢𝐥𝐞 𝐚𝐧𝐝 𝐆𝐞𝐭 𝐚 𝐃𝐢𝐫𝐞𝐜𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐋𝐢𝐧𝐤 𝐚𝐧𝐝 𝐒𝐭𝐫𝐞𝐚𝐦𝐚𝐛𝐥𝐞 𝐋𝐢𝐧𝐤 🔥\n\n🍃𝐒𝐞𝐚𝐫𝐜𝐡 𝐌𝐨𝐯𝐢𝐞 : @FileSearch1Bot</b>',
         reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("Updates Channel Link", url="http://t.me/autoacceptor/85")
+                            InlineKeyboardButton("🦋 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🦋", url="https://t.me/+-ktYuYV7BOViNGZk")
                         ]
                     ]
                 ),)
