@@ -9,8 +9,8 @@ load_dotenv()
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = 1336587
-    API_HASH = "16d8b0899865fddf5e00e3fc9d440e60"
+    API_ID = 1270600
+    API_HASH = "20364627248fa3c42782c1fe16b65314"
     BOT_TOKEN = "5097487403:AAEJ1HCQjpS5SONX5f7JTUNVMai5nFA_Uog"
     name = str(getenv('name', 'filetobot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
