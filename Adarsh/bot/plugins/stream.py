@@ -155,7 +155,7 @@ async def private_receive_handler(c: Client, m: Message):
         stream_link = f"{Var.URL}watch/{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
         online_link = f"{Var.URL}{str(log_msg.id)}/{quote_plus(get_name(log_msg))}?hash={get_hash(log_msg)}"
        
-        msg_text ="""<b><i>🔗 Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇᴅ 😜</i></b>\n\n<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : {}</b>\n\n<b>📦 Fɪʟᴇ ꜱɪᴢᴇ : {}</b>\n\n<b>📥 Dᴏᴡɴʟᴏᴀᴅ : {}</b>\n\n<b> 🖥 WATCH  : {}</b>\n\n<b>🚸 Nᴏᴛᴇ : LINK EXPIRE IN 6 HOURS\n\nUse Any Internet Downlaod Managers like idm to Get Maximum Downloading speed</b>"""
+        msg_text ="""<b><i>🔗 Dᴏᴡɴʟᴏᴀᴅ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇᴅ 😜</i></b>\n\n<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : {}</b>\n\n<b>📦 Fɪʟᴇ ꜱɪᴢᴇ : {}</b>\n\n<b>📥 Dᴏᴡɴʟᴏᴀᴅ : {}</b>\n\n<b> 🖥 WATCH  : {}</b>\n\n<b>🚸 Nᴏᴛᴇ : LINK EXPIRE IN 6 HOURS\n\nᴜꜱᴇ ᴀɴʏ ɪɴᴛᴇʀɴᴇᴛ ᴅᴏᴡɴʟᴀᴏᴅ ᴍᴀɴᴀɢᴇʀꜱ ʟɪᴋᴇ 1DM ᴛᴏ ɢᴇᴛ ᴍᴀxɪᴍᴜᴍ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴘᴇᴇᴅ</b>"""
 
         #await log_msg.reply_text(text=f"**RᴇQᴜᴇꜱᴛᴇᴅ ʙʏ :** [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n**Uꜱᴇʀ ɪᴅ :** `{m.from_user.id}`\n**Stream ʟɪɴᴋ :** {stream_link}", disable_web_page_preview=True,  quote=True)
         await m.reply_text(
