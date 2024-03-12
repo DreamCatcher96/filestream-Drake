@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Var(object):
-    MULTI_CLIENT = False
+    MULTI_CLIENT = True 
     API_ID = 1270600
     API_HASH = "20364627248fa3c42782c1fe16b65314"
     BOT_TOKEN = "5097487403:AAEJ1HCQjpS5SONX5f7JTUNVMai5nFA_Uog"
