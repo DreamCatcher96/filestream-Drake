@@ -65,6 +65,8 @@ def limiter1(rate_limit_seconds: float) -> Callable:
 @StreamBot.on_message((filters.command("start")) & filters.private )
 @limiter1(2)
 async def start(b, m):
+    if not await db.is_user_exist(m.from_user.id):
+        await db.add_user(m.from_user.id)
     await b.send_message(
         chat_id=m.chat.id,
         text =f'<b>Hᴇʏ 👋 {m.from_user.mention(style="md")} 😍\n\n𝐈 𝐦 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐢𝐥𝐞 𝐭𝐨 𝐃𝐢𝐫𝐞𝐜𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐋𝐢𝐧𝐤 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐨𝐫 𝐁𝐨𝐭 😜\n\n𝐒𝐞𝐧𝐝 𝐌𝐞 𝐀𝐧𝐲 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐅𝐢𝐥𝐞 𝐚𝐧𝐝 𝐆𝐞𝐭 𝐚 𝐃𝐢𝐫𝐞𝐜𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐋𝐢𝐧𝐤 𝐚𝐧𝐝 𝐒𝐭𝐫𝐞𝐚𝐦𝐚𝐛𝐥𝐞 𝐋𝐢𝐧𝐤 🔥\n\n🍃𝐒𝐞𝐚𝐫𝐜𝐡 𝐌𝐨𝐯𝐢𝐞 : @FileSearch1Bot</b>',
