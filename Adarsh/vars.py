@@ -21,11 +21,6 @@ class Var(object):
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     OWNER_ID = 6366452257
     NO_PORT = bool(getenv('NO_PORT', False))
-    MULTI_TOKEN1 = "6454293731:AAFJRf-rweRD2zxYVRZjM-MNztQ97zLU5wU"
-    MULTI_TOKEN2 = "7142938916:AAHYnz5RKJLhr-0T-vXkmCiz7Gd1EutOqRM"
-    MULTI_TOKEN3 = "6996144146:AAGxPMFKuiMw_T8x8hi7HEyo8gOqmzho2yc"
-    MULTI_TOKEN4 = "7195519498:AAErJAHje-nGClq0iTBUa5TUPfmZfv1ae7w"
-    MULTI_TOKEN5 = "6495625055:AAHGTprLeh1caHqVihi0m7HwpZp_Fu3Qo0c"
     APP_NAME = "fsearch1bot"
     OWNER_USERNAME = "WhitE_DeviL099"
     if 'DYNO' in environ:
