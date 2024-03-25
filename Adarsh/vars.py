@@ -22,6 +22,7 @@ class Var(object):
     OWNER_ID = 6366452257
     NO_PORT = bool(getenv('NO_PORT', False))
     APP_NAME = "fsearch1bot"
+    FQDN = "fsearch1bot-1b7c04fe436d.herokuapp.com"
     OWNER_USERNAME = "WhitE_DeviL099"
     if 'DYNO' in environ:
         ON_HEROKU = True
