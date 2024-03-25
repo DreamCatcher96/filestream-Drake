@@ -26,7 +26,7 @@ class Var(object):
     MULTI_TOKEN3 = "6996144146:AAGxPMFKuiMw_T8x8hi7HEyo8gOqmzho2yc"
     MULTI_TOKEN4 = "7195519498:AAErJAHje-nGClq0iTBUa5TUPfmZfv1ae7w"
     MULTI_TOKEN5 = "6495625055:AAHGTprLeh1caHqVihi0m7HwpZp_Fu3Qo0c"
-    APP_NAME = fsearch1bot
+    APP_NAME = "fsearch1bot"
     OWNER_USERNAME = "WhitE_DeviL099"
     if 'DYNO' in environ:
         ON_HEROKU = True
