@@ -168,7 +168,7 @@ async def private_receive_handler(c: Client, m: Message):
                                                 InlineKeyboardButton('DOWNLOAD 📥', url=online_link)],
                                                 [InlineKeyboardButton("🦋 𝗨𝗣𝗗𝗔𝗧𝗘 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 🦋", url="https://t.me/+-ktYuYV7BOViNGZk")]])) #Download Link
     except FloodWait as e:
-        print(f"Sleeping for {str(e.x)}s")
+        print("Sleeping Floodwaits")
         await asyncio.sleep(e.x)
         await c.send_message(chat_id=Var.BIN_CHANNEL, text=f"Gᴏᴛ FʟᴏᴏᴅWᴀɪᴛ ᴏғ {str(e.x)}s from [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n\n**𝚄𝚜𝚎𝚛 𝙸𝙳 :** `{str(m.from_user.id)}`", disable_web_page_preview=True)
 
