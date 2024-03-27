@@ -21,7 +21,7 @@ class Var(object):
     PING_INTERVAL = int(environ.get("PING_INTERVAL", "1200"))  # 20 minutes
     OWNER_ID = 6366452257
     NO_PORT = bool(getenv('NO_PORT', False))
-    APP_NAME = "fsearch1bot"
+    APP_NAME = None
     OWNER_USERNAME = "WhitE_DeviL099"
     if 'DYNO' in environ:
         ON_HEROKU = True
